@@ -44,7 +44,7 @@ func (c *CBRApiClient) GetRates(date string) ([]entities.CurrencyRate, error) {
 	}
 	req.Header.Set("User-Agent", "Mozilla/5.0")
 
-	// Повторно используйте http.Client для keep-alive
+
 	client := &http.Client{}
 	resp, err := client.Do(req)
 	if err != nil {
