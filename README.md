@@ -1,0 +1,1 @@
+# запуск через команду docker-compose up
